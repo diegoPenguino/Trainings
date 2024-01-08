@@ -5,12 +5,12 @@ using namespace std;
 void ejemplo1() {
     char a, b;
     string s;
-    int t, n;
+    long long t, n;
     cout << "Hola!" << endl;
 
     cout << "Ingresa un numero: ";
-    cin >> n;
-    cout << n << endl;
+    cin >> n >> t;
+    cout << n << t << endl;
 
     cout << "Ingresa dos caracteres: ";
     cin >> a >> b;
@@ -27,6 +27,9 @@ void ejemplo1() {
 
     cout << "Ingresa un string con espacios:";
     cin.ignore();
+    getline(cin, s);
+    getline(cin, s);
+    getline(cin, s);
     getline(cin, s);
     cout << s << endl;
 }

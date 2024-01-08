@@ -6,9 +6,9 @@ int main() {
     int a;
     long long l;
     char c;
+    string s;
     float f;
     double d;
-    string s;
     unsigned long long ul;
     return 0;
 }

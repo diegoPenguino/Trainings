@@ -30,6 +30,10 @@ void vector_example() {
     v.push_back(1);
 
     sort(v.begin(), v.end());
+    for (int i = 0; i < v.size(); i++) {
+        cout << v[i] << ' ';
+    }
+
     for (auto x : v) {
         cout << x << " ";
     }
@@ -37,7 +41,7 @@ void vector_example() {
 }
 
 void set_example() {
-    set<int> s;
+    unordered_set<int> s;
     cout << "SIZE: " << s.size() << endl;
     cout << "EMPTY: " << s.empty() << endl;
     cout << "-------------------\n";
@@ -110,9 +114,16 @@ void string_example() {
 }
 
 int main() {
-    // vector_example();
+    /*
+        List -> vector<type>
+        Set {} -> set<type>
+        Dict {key:value} -> map<type_key, type_value>
+        str -> string
+    */
+
+    vector_example();
     // set_example();
     // map_example();
-    string_example();
+    // string_example();
     return 0;
 }
